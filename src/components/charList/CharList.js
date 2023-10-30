@@ -96,7 +96,7 @@ const CharList = (props) => {
                 className = "button button__main button__long"
                 disabled = {newItemLoading}
                 style = {{"display": charEnded ? "none" : "block"}}
-                onClock = {() => onRequest(offset)}>
+                onClick = {() => onRequest(offset)}>
                     <div className = "inner"> Load More </div>
                 </button>
         </div>

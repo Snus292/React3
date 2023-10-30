@@ -18,6 +18,7 @@ const ComicsList = (props) => {
 
     useEffect(() => {
         onRequest(offset, true);
+
     }, [])
 
     const onRequest = (offset, initial) => {
@@ -73,7 +74,7 @@ const ComicsList = (props) => {
                 className = "button button__main button__long"
                 disabled = {newItemLoading}
                 style = {{"display": comicsEnded ? "none" : "block"}}
-                onClock = {() => onRequest(offset)}>
+                onClick = {() => onRequest(offset)}>
                     <div className = "inner"> Load More </div>
             </button>
         </div>
